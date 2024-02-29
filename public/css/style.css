@@ -1,0 +1,249 @@
+body{
+    background-color: #fafafa;
+    font-family: 'Patua One';
+}
+.navbar-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.navbar-nav .dropdown-menu{
+    position: absolute;
+}
+.log{
+    justify-content: end;
+}
+.navbar-brand {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 30vh;
+}
+.input-group{
+    justify-content: center;
+    width: 100%;
+}
+.navbar {
+    filter:alpha(opacity=70);
+    transition: all 0.5s;
+    background-color: #0d0d0d7c;
+    
+}
+.collapse .nav-link{
+    color: #fafafa !important;
+    margin-top: 0.4rem !important;
+   
+}
+.navbar-login .nav-link{
+    color: #fafafa;
+    margin-top: 0.1rem !important;
+}
+.navbar-scrolled{
+    background-color: #0d0d0d!important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    color: blue;
+}
+/*responsif*/
+@media screen and (max-width: 600px) {
+    .dropdown-menu {
+        transform: translate(0, 3px);
+    }
+    .owl-nav .owl-next {
+        transform: translate(20px, 0px); 
+    }
+    .owl-nav .owl-prev {
+        transform: translate(-20px, 0px); 
+    }
+    .semarang{
+        position: absolute;
+        top: 5%;
+        left: 0;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+}
+@media screen and (min-width:991px){
+    .drop-log{
+        transform: translateX(-75%);
+    }
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	/* .navbar .nav-item:hover .nav-link{  } */
+	.navbar .nav-item:hover .dropdown-menu{ 
+        display: block;
+    }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+/* ============ desktop view .end// ============ */
+/* responsif */
+.card-body .btn{
+    margin-top: auto;
+}
+.carousel-container {
+    position: relative;
+}
+.carousel{
+    opacity: 0.7;
+    /* position: absolute; */
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    filter: brightness(0.6);
+}
+.semarang{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-family: 'Patua One';
+}
+.logo{
+    position: relative;
+    width: 10rem;
+    margin-right: 1.5%;
+}
+.form {
+    display: flex;
+    justify-content: start;
+}
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+.owl-carousel.owl-loaded {
+	display: inline-block;
+}
+.slider {
+  margin-bottom: 30px;
+  position: relative;
+}
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  background: rgb(38,84,250);
+  background: rgb(38,84,250);
+  background: linear-gradient(180deg, rgba(38,84,250,1) 32%, rgba(85,109,245,1) 52%, rgba(255,255,255,1) 100%); 
+  color: #fff;
+  
+}
+.slider-card {
+  background: #fff;
+  padding: 0px 0px;
+  margin: 50px 15px 60px 15px;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: all 0.3s;
+  width: 50vh;
+  height: auto;
+}
+.slider-card img {
+  border-radius: 5px 5px 0px 0px;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-dots .owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background: #ccc !important;
+  margin-left: 3px;
+  margin-right: 3px;
+  outline: none;
+}
+.owl-dots .owl-dot.active {
+  background: #f44336 !important;
+}
+/* .owl-item.active.center {
+    transform: scale(1.1, 1.2);
+    
+} */
+
+/* .news{
+    margin-top: 65vh;
+    position:relative;
+} */
+.blog{
+    background-image: url("/image/Lawang.jpg") !important;
+    width: 100%;
+}
+.judul{
+    margin-top: 10vh;
+}
+.about{
+    margin-top:10vh;
+}
+@media screen and (max-width: 600px) {
+    .about{
+        margin-top:15vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .reply{
+        margin-left: 50px;
+    }
+}
+@media screen and (min-width: 768px){
+    .reply{
+        margin-left: 150px;
+    }
+}
