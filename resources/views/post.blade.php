@@ -16,7 +16,7 @@
             @endif
 
             <article class="my-3 fs-5">
-                {!!  $post->body  !!}
+                {     $post->body  !!}
             </article>
             @if(!empty($post->address))
                 <h5 class="ms-2">Info Lokasi :</h5>
